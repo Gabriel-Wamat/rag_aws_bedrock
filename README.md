@@ -1,6 +1,6 @@
 # 🧠 LangGraph RAG com AWS Bedrock + Streamlit
 
-Aplicação simples RAG que responde perguntas com base sobre um Guia de LangGraph **langgraph_guide.pdf**
+Aplicação simples RAG que responde perguntas com base sobre um Guia de LangGraph 
 
 ---
 
