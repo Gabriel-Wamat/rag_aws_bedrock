@@ -10,7 +10,7 @@ Aplicação simples RAG que responde perguntas sobre um Guia de LangGraph
 - Usa **Titan Embeddings** para vetorização semântica
 - Recupera os trechos mais relevantes por similaridade
 - Usa o **Mistral 7B Instruct (via Bedrock)** para gerar respostas
-- Interface interativa e amigável com Streamlit
+- Interface com Streamlit
 
 ---
 
