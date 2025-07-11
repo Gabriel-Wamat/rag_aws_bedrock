@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 ```env
 AWS_ACCESS_KEY_ID=SEU_ID
-AWS_SECRET_ACCESS_KEY=SEU_SEGREDO
+AWS_SECRET_ACCESS_KEY= 
 AWS_DEFAULT_REGION=us-east-1
 ```
 
