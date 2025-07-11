@@ -17,11 +17,11 @@ Aplicação simples RAG que responde perguntas com base sobre um Guia de LangGra
 ## 🗂 Estrutura do projeto
 
 📁 langgraph-rag/
-├── app.py                 # Código principal (RAG + Interface)
-├── langgraph_guide.pdf    # Documento base de conhecimento
-├── .env                   # Variáveis de ambiente (chaves AWS)
-├── requirements.txt       # Dependências do projeto
-└── .gitignore             # Itens ignorados pelo Git
+app.py                 # Código principal (RAG + Interface)
+langgraph_guide.pdf    # Documento base de conhecimento
+.env                   # Variáveis de ambiente (chaves AWS)
+requirements.txt       # Dependências do projeto
+.gitignore             # Itens ignorados pelo Git
 
 ---
 
