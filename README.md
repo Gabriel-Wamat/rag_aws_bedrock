@@ -1,4 +1,4 @@
-# 🧠 LangGraph RAG com AWS Bedrock + Streamlit
+# LangGraph RAG com AWS Bedrock + Streamlit
 
 Aplicação simples RAG que responde perguntas sobre um Guia de LangGraph 
 
