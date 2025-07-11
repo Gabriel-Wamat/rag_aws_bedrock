@@ -14,10 +14,10 @@ from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import START, StateGraph
 
-#  1. Config .env 
+# 1. Variável de ambiente
 load_dotenv()
 
-# 2. AWS e Bedrock 
+# 2. AWS/Bedrock 
 bedrock_client = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_DEFAULT_REGION"))
 
 llm = ChatBedrockConverse(
@@ -30,7 +30,7 @@ embeddings = BedrockEmbeddings(
     model_id="amazon.titan-embed-text-v2:0"
 )
 
-# 3. Carregar e vetorar PDF 
+# 3. Carregando e vetorizadno o PDF 
 vector_store = InMemoryVectorStore(embeddings)
 
 loader = PyPDFLoader("langgraph_guide.pdf")  
@@ -52,7 +52,7 @@ def retrieve(state: State):
     return {"context": docs}
 
 prompt = ChatPromptTemplate.from_template(
-    "Você é um assistente técnico especializado em LangGraph. Responda com base apenas no guia abaixo.Toda a resposta tem que ser em português brasileiro\n"
+    "A partir de agora você é um assistente técnico especializado em LangGraph. Responda com base apenas no guia abaixo.Toda a resposta tem que ser em português brasileiro\n"
     "Se a resposta não estiver claramente contida, diga que não sabe.\n\n"
     "Contexto:\n{context}\n\nPergunta: {question}"
 )
@@ -77,7 +77,7 @@ def responder_pergunta(pergunta: str) -> str:
 # 5. Interface  
 st.set_page_config(page_title="LangGraph RAG", layout="centered")
 
-st.title("RAG - Pergunte sobre o LangGraph")
+st.title("RAG: Pergunte sobre o LangGraph")
 st.caption("Baseado no conteúdo do PDF 'langgraph_guide.pdf'")
 
 pergunta = st.text_input("Digite sua pergunta:")
