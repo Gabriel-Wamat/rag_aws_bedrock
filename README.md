@@ -44,11 +44,13 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
-## 🔐 Configuração do .env
+## 🔐 Configuração do `.env`
 
+```env
 AWS_ACCESS_KEY_ID=SEU_ID
 AWS_SECRET_ACCESS_KEY=SEU_SEGREDO
 AWS_DEFAULT_REGION=us-east-1
+```
 
 ## Execução do app
 streamlit run app.py
